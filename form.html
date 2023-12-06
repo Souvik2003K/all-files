@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .sec{
+            background-color: white;
+            margin: 20px 350px;
+            padding: 20px 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px;
+        }
+        .size{
+            width: 50%;
+            margin: 0 100px;
+        }
+
+        .buton{
+            margin: auto 180px;
+            padding: 10px;
+            width: 90px;
+            background-color: yellow;
+            font-size: large;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body style="background-color:pink;">
+    
+    
+    <form action="" class="forms">
+        <h1>SignUp Form</h1>
+
+        <div id="name" class="sec">
+            <h3>Full Name:</h3>
+            <input type="text" class="size">
+        </div>
+        
+        <div id="mail" class="sec">
+            <h3>Email:</h3>
+            <input type="email" name="" class="size">
+        </div>
+        
+        <div id="pass" class="sec">
+            <h3>Password:</h3>
+            <input type="password" name="" class="size">
+        </div>
+        
+        <div id="c-pass" class="sec">
+            <h3>Confirm Password:</h3>
+            <input type="password" name="" class="size">
+        </div>
+        
+        <div id="gend" class="sec">
+            <h3>Gender</h3>
+            <input type="radio" name="a" id="gender">Male
+            <input type="radio" name="a" id="gender">Female
+            <input type="radio" name="a" id="gebder">Others
+        </div>
+
+
+        
+        
+        <div id="ques" class="sec">
+            <h3>Security Question:</h3>
+            <select name="select" class="size">
+                <br><option value="a">my pet's name</option>
+                <option value="a">my school's name</option>
+                <option value="a">my hobby is </option>
+            </select>
+        
+            <br><br>
+
+            <textarea name="" class="size" cols="80" rows="8"></textarea>
+        </div>
+        
+        
+
+        <div id="cond" class="sec">
+            <input type="checkbox" name="I Agree the terms and conditions" id=""> I Agree the terms and conditions
+        
+            <br><br>
+
+            <input type="button" value="Register" class="buton">
+        </div>
+
+    </form>
+</body>
+</html>

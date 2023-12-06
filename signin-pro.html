@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d8b0a3479.js" crossorigin="anonymous"></script>
+    <title>SignUp Page</title>
+    <style>
+        body{
+            background-color: rgb(241, 236, 236);
+        }
+        h2{
+            text-align: center;
+        }
+        .forms{
+            background-color: white;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: auto;
+            width: 500px;
+        }
+        .field{
+            margin: 10px 30px;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 80%;
+        }
+        .icons{
+            text-align: center;
+            word-spacing: 20px;
+            background-color: rgb(210, 242, 255);
+            padding: 10px;
+        }
+        .submit{
+            margin: 20px auto;
+            width: 40px;
+        }
+        .btn{
+            font-size: 15px;
+            background-color: rgb(124, 189, 186);
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form class="forms" method="get">
+        <h2>Register</h2>
+        <div class="icons">
+            <!-- google -->
+            <i class="fa-brands fa-google fa-2x icon"></i>
+            <!-- fb -->
+            <i class="fa-brands fa-facebook fa-2x icon"></i>
+            <!-- github -->
+            <i class="fa-brands fa-github fa-2x icon"></i>
+            <!-- linkedin -->
+            <i class="fa-brands fa-linkedin fa-2x icon"></i>
+        </div>
+
+        <div class="username">
+            <input type="text" class="field" id="name" placeholder="Username" required>
+        </div>
+
+        <div class="mail">
+            <input type="email" class="field" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="pass">
+            <input type="password" class="field" id="pass" placeholder="Password" required min="8" maxlength="8">
+        </div>
+        
+        <div class="c-pass">
+            <input type="password" class="field" id="c-password" placeholder="Confirm Password" required min="8" maxlength="8">
+        </div>
+
+        <div class="submit">
+            <button class="btn">Register</button>
+        </div>
+    </form>
+</body>
+</html>
